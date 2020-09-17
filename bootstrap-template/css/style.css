@@ -1,0 +1,432 @@
+html,body{
+    margin: 0%;padding: 0%;
+}
+*
+{
+    box-sizing: border-box;
+}
+
+/************************
+********header navbar****
+*************************/
+
+.header-navbar{
+    background-color: rgb(244, 98, 58);
+}
+.navbar .navbar-brand{
+    color: white;
+}
+.navbar .navbar-nav{
+    width: 100%;padding-left: 45%;
+}
+.navbar .navbar-nav .nav-item{
+    color: white;
+}
+.menu_fixed{
+    position: fixed;
+    z-index: 9999 !important;
+    width: 100%;
+    background-color: rgb(244, 98, 58);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
+    top: 0;
+}
+/********************
+******home section***
+*********************/
+.home-section{
+    height: 450px;background-position: top center;background-size: cover;position: relative;background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../img/bg.jpg");background-size: cover;background-position: center;padding-bottom: 10%;
+}
+.home-title{
+    margin-top: 10%;text-align: center;position: relative;
+}
+.home-title::after{
+   position: absolute;content: '';bottom: -20%;width: 100px;height: 1vh;background-color: orangered;left: 43%;
+}
+.home-title h1{
+    color: white;font-size: 60px;
+}
+.home-text{
+    color: white;text-align: center;margin-top: 5%;
+}
+.home-text .btn{
+    display: inline-block;font-weight: 400;color: white;text-align: center;vertical-align: middle;-webkit-user-select: none;-moz-user-select: none; -ms-user-select: none; user-select: none; background-color: rgb(244, 98, 58);border: 1px solid transparent;padding: 0.375rem 0.75rem;font-size: 1rem;line-height: 1.5;border-radius: 0.25rem;transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;border-radius: 50px;
+}
+.home-text .btn-link:hover{
+    text-decoration: none;
+}
+
+/**********************************************
+****************need section*******************
+**********************************************/
+.need-section{
+    padding-top: 10%;padding-bottom: 10%;background-color: rgb(244, 98, 58);
+}
+.need-title{
+    text-align: center;position: relative;color: white;
+}
+.need-title::after{
+    position: absolute;content: '';bottom: -60%;width: 100px;height: 1vh;background-color: white;left: 43%;
+}
+.need-text{
+    text-align: center;margin-top: 10%;
+}
+.need-text p{
+    color: white;
+}
+.need-text .btn{
+    display: inline-block;font-weight: 400;color: rgb(244, 98, 58);text-align: center;vertical-align: middle;-webkit-user-select: none;-moz-user-select: none; -ms-user-select: none; user-select: none; background-color: white;border: 1px solid transparent;padding: 0.375rem 0.75rem;font-size: 1rem;line-height: 1.5;border-radius: 0.25rem;transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;border-radius: 50px;
+}
+.need-text .need-btn:hover{
+    text-decoration: none;
+}
+
+/**********************************************
+****************Service section*******************
+**********************************************/
+
+.service-section{
+    padding-top: 10%;padding-bottom: 10%;
+}
+.service-title{
+    text-align: center;position: relative;
+}
+.service-title::after{
+    position: absolute;content: '';bottom: -60%;width: 100px;height: 1vh;background-color: rgb(244, 98, 58);left: 43%;
+}
+.service{
+    margin-top: 50%;text-align: center;margin-left: 3%;margin-right: 3%;
+}
+.service .icon{
+    font-size: 50px;color: rgb(244, 98, 58);margin-bottom: 5%;
+}
+.service h3{
+    font-size: 23px;
+}
+.service p{
+    font-size: 12px;
+}
+
+/************************************************
+**************project scetion********************
+*************************************************/
+
+.project-section{
+    background: black;padding-bottom: 10%;
+}
+.hovereffect {
+    width:100%;
+    height:100%;
+    float:left;
+    overflow:hidden;
+    position:relative;
+    text-align:center;
+    cursor:default;
+    }
+    
+    .hovereffect .overlay {
+    width:100%;
+    height:100%;
+    position:absolute;
+    overflow:hidden;
+    top:0;
+    left:0;
+    opacity:0;
+    background-color: rgba(244, 98, 58, 0.5);
+    -webkit-transition:all .4s ease-in-out;
+    transition:all .4s ease-in-out
+    }
+    
+    .hovereffect img {
+    display:block;
+    position:relative;
+    -webkit-transition:all .4s linear;
+    transition:all .4s linear;
+    }
+    
+    .hovereffect h2 {
+    text-transform:uppercase;
+    color:#fff;
+    text-align:center;
+    position:relative;
+    font-size:17px;
+    -webkit-transform:translatey(-100px);
+    -ms-transform:translatey(-100px);
+    transform:translatey(-100px);
+    -webkit-transition:all .2s ease-in-out;
+    transition:all .2s ease-in-out;
+    padding:10px;
+    margin-top: 25%;
+    }
+    
+    .hovereffect a.info {
+    text-decoration:none;
+    display:inline-block;
+    text-transform:uppercase;
+    color:#fff;
+    opacity:0;
+    filter:alpha(opacity=0);
+    -webkit-transition:all .2s ease-in-out;
+    transition:all .2s ease-in-out;
+    }
+    
+    
+    .hovereffect:hover img {
+    -ms-transform:scale(1.2);
+    -webkit-transform:scale(1.2);
+    transform:scale(1.2);
+    }
+    
+    .hovereffect:hover .overlay {
+    opacity:1;
+    filter:alpha(opacity=100);
+    }
+    
+    .hovereffect:hover h2,.hovereffect:hover a.info {
+    opacity:1;
+    filter:alpha(opacity=100);
+    -ms-transform:translatey(0);
+    -webkit-transform:translatey(0);
+    transform:translatey(0);
+    }
+    
+    .hovereffect:hover a.info {
+    -webkit-transition-delay:.2s;
+    transition-delay:.2s;
+    }
+
+    .project-title{
+        margin-top: 10%;text-align: center;color: white;
+    }
+    .project-title .btn{
+        display: inline-block;font-weight: 400;color: black;text-align: center;vertical-align: middle;-webkit-user-select: none;-moz-user-select: none; -ms-user-select: none; user-select: none; background-color: white;border: 1px solid transparent;padding: 0.375rem 0.75rem;font-size: 1rem;line-height: 1.5;border-radius: 0.25rem;transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;border-radius: 50px;
+    }
+
+    /************************************************
+    **************project scetion********************
+    *************************************************/
+
+    .footer-section{
+        padding-top: 10%;padding-bottom: 10%;
+    }
+    .footer-title{
+        text-align: center;position: relative;
+    }
+
+    .footer-title::after{
+        position: absolute;content: '';width: 100px;height: 1vh;bottom: -60%;left: 43%;background: rgb(244, 98, 58);
+    }
+    .footer-text{
+        text-align: center;margin-top: 7%;
+    }
+    .footer{
+        text-align: center;margin-top: 10%;
+    }
+    .footer-icon{
+        font-size: 25px;
+    }
+    .footer p{
+        margin-top: 5%;
+    }
+
+
+    /************************************************
+    **************RESPONSIVE********************
+    *************************************************/
+
+    @media only screen and (min-width:992px) and (max-width:1199px){
+        .home-title{
+            margin-top: 5%;
+        }
+        .home-text p{
+            font-size: 25px;
+        }
+    }
+
+    @media only screen and (min-width:768px) and (max-width:991px){
+        .home-title{
+            margin-top: 10%;
+        }
+        .home-title h1{
+            font-size: 50px;
+        }
+        .home-text .btn{
+            margin-top: 5%;
+        }
+        .need-text .btn{
+            margin-top: 5%;
+        }
+        .project-title .btn{
+           margin-top: 5%;
+        }
+        .hovereffect h2{
+            margin-top: 15%;
+        }
+    }
+
+    @media only screen and (min-width:576px) and (max-width:767px){
+        .home-title{
+            margin-top: 15%;margin-bottom: 5%;
+        }
+        .home-title h1{
+            font-size: 40px;
+        }
+        .home-title::after{
+           margin-bottom: -5%;
+        }
+        .home-text{
+            margin-top: 15%;font-size: 17px;
+        }
+        .home-text .btn{
+            margin-bottom: 10%;
+        }
+        .need-text .btn{
+            margin-top: 5%;
+        }
+        .project-title .btn{
+            margin-top: 5%;
+        }
+        .hovereffect h2{
+            margin-top: 15%;
+        }
+        .service p{
+            font-size: 30px;
+        }
+        .service h3{
+            font-size: 50px;
+        }
+        .service .icon{
+            font-size: 70px;
+        }
+        .service-title{
+            margin-top: 10%;
+        }
+        .service-title h1{
+            font-size: 50px;
+        }
+        .footer .footer-icon{
+            font-size: 50px;
+        }
+        .footer p{
+            font-size: 30px;
+        }
+    }
+
+    @media only screen and (min-width:360px) and (max-width:575px){
+        .home-title{
+            margin-top: 15%;
+        }
+        .home-title::after{
+            margin-left: -10%;margin-bottom: -5%;
+        }
+        .home-title h1{
+            font-size: 29px;
+        }
+        .home-text{
+            padding-top: 10%;font-size: 20px;
+        }
+        .home-text .btn{
+            margin-top: 5%;
+        }
+        .need-title::after{
+            margin-left: -10%;
+        }
+        .need-text{
+            margin-top: 20%;
+        }
+        .need-text .need-btn{
+            width: 50%;
+        }
+        .project-title .btn{
+            width: 30%;
+        }
+        .hovereffect h2{
+            margin-top: 15%;
+        }
+        .service p{
+            font-size: 20px;
+        }
+        .service h3{
+            font-size: 40px;
+        }
+        .service .icon{
+            font-size: 60px;
+        }
+        .service-title{
+            margin-top: 10%;
+        }
+        .service-title::after{
+            margin-left: -10%;
+        }
+        .service-title h1{
+            font-size: 40px;
+        }
+        .project-title h2{
+            font-size: 30px;
+        }
+        .project-title .btn{
+            width: 50%;margin-top: 5%;
+        }
+        .footer .footer-icon{
+            font-size: 50px;
+        }
+        .footer p{
+            font-size: 30px;
+        }
+        .footer-title{
+            margin-top: 10%;
+        }
+        .footer-title::after{
+            margin-left: -10%;
+        }
+        .footer-text{
+            margin-top: 15%;
+        }
+    }
+
+    @media only screen and (min-width:320px) and (max-width:359px){
+        .home-title h1{
+            font-size: 25px;
+        }
+        .home-title{
+            margin-top: 25%;
+        }
+        .home-title::after{
+            margin-bottom: -5%;margin-left: -10%;
+        }
+        .home-text{
+            margin-top: 15%;
+        }
+        .home-text .btn{
+            margin-top: 5%;
+        }
+        .need-title::after{
+            margin-left: -10%;
+        }
+        .need-text{
+            margin-top: 20%;
+        }
+        .service h3{
+            font-size: 40px;
+        }
+        .service p{
+            font-size: 25px;
+        }
+        .service{
+            margin-bottom: 10%;
+        }
+        .project-title{
+            margin-bottom: 15%;
+        }
+        .project-title h2{
+            font-size: 25px;
+        }
+        .project-title .btn{
+            margin-top: 5%;
+        }
+        .footer-title::after{
+            margin-left: -10%;
+        }
+        .footer-text{
+            margin-top: 15%;
+        }
+    }
