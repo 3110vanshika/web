@@ -391,7 +391,7 @@ ol {
 }
 
 .top-search {
-	font-size: 15px;
+	font-size: 20px;
 	height: 50px;
 	width: 50px;
 	color: #ffffff;
@@ -402,6 +402,7 @@ ol {
 	float: right;
 	margin: 19px 0 16px;
 }
+
 
 .slicknav_menu {
 	display: none;
@@ -2864,5 +2865,16 @@ ol {
 	}
 	.section title{
 		text-align: center;
+	}
+}
+@media only screen and (max-width:360px){
+	.category-title .right-btn{
+		margin-top: 5%;margin-right: 20%;
+	}
+	.section-title{
+		text-align: center;
+	}
+	.hs-slider .hs-item .hs-text h1{
+		font-size: 45px;
 	}
 }
